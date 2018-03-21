@@ -21,4 +21,5 @@ function deepestChild() {
     current = insidecurrent
     insidecurrent = current.children[0]
   }
+  return current
 }
