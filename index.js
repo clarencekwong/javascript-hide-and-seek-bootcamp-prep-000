@@ -14,13 +14,12 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
-  let node = document.getElementById('grand-node')
-  let nextNode = node.children[0]
-
-  while (nextNode) {
-    node = nextNode
-    nextNode = node.children[0]
+  var current = document.getElementById('grand-node')
+  var insidecurrent = current.children[0]
+  
+  while (current) {
+    current = insidecurrent
+    insidecurrent = current.children[0]
   }
-
-  return node
+  return current
 }
