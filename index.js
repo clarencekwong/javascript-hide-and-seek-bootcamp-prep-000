@@ -19,6 +19,6 @@ function deepestChild() {
   
   while (current) {
     current = insidecurrent
-    
+    insidecurrent = current.children[0]
   }
 }
