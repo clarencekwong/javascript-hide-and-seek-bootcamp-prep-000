@@ -18,6 +18,7 @@ function deepestChild() {
   insidecurrent = current.children[0]
   
   while (current) {
-    current = insidecurrent.
+    current = insidecurrent
+    
   }
 }
